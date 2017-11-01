@@ -1,72 +1,175 @@
 body{
-
   background-color: #272727;
+  cursor: none;
 }
+
 #front-carousel{
   background-color: #777;
   width:90%;
-  height:70vh;
+  height:80vh;
   margin: 10vh auto;
   overflow:hidden;
 }
-#front-carousel figure{
-width: 33.3%;
-display: inline-block;
-position: relative;
-animation: sliding 10s infinite;
-
-}
 #front-carousel .slider{
-  border: 2px solid green;
+  /*border: 2px solid green;*/
   width:300%;
   position: relative;
   overflow:hidden;
 }
+
+
+  #front-carousel figure{
+  width: 33.3%;
+  left:80vw;
+  display: inline-block;
+  position: relative;
+  animation: sliding 10s infinite;
+  /*border:5px solid blue;*/
+}
+
 #front-carousel figcaption{
   position: absolute;
   top: 10%;
   left: 30%;
-}
-#front-carousel .navigation {
-  position: absolute;
-  border: 2px solid red;
-  height: 47vh;
-   width: 90%;
-   bottom: 41vh;
-   left: 5vw;
-}
-#front-carousel .navigation a:nth-child(1){
-  position: absolute;
-  border: 2px solid red;
-  bottom: 22vh;
-left: 4vw;
-}
-#front-carousel .navigation a:nth-child(2){
-  position: absolute;
-  border: 2px solid red;
-  bottom: 22vh;
-  left: 80vw;
+  /*border:6px solid yellow ;*/
+  height: 60vh;
+  width: 30%;
 
 }
-#front-carousel .paginator{
-  height: 47vh;
-   width: 90%;
+#front-carousel figcaption div{
   position: absolute;
-  border:2px solid red;
-  bottom: 41vh;
-  left:5vw;}
-  #front-carousel .paginator a{
-    position: relative;;
-    bottom: 41vh;
-    left:5vw;
+    width: 12vw;
+    height: 58vh;
+    border: 3px solid rgb(206, 224, 2);
+
 }
+#front-carousel figcaption p{
+position: absolute;
+  font-size: 2vh;
+  color:white;
+  font-weight:900;
+  padding-left: 2vw;
+  padding-bottom: 5vh;
+  padding-top: 2vh;
+
+}
+#front-carousel figcaption h3{
+ position: absolute;
+  font-size: 7vh;
+  color: white;
+  font-weight: 900;
+  width: 67%;
+  top: 9vh;
+  padding-left: 2vw;
+
+}
+#front-carousel figcaption a{
+  color: white;
+  top: 50vh;
+  right: -2.5vw;
+  position: absolute;
+  width: 100%;
+  font-weight:500;
+}
+#front-carousel #hov{
+  position: absolute;
+  /*border: 2px solid red;*/
+  height:80vh;
+  width:90%;
+  bottom:10vh;
+  left:5vw;
+  opacity:0;
+  cursor: auto;
+  transition:3s;
+}
+
+
+#front-carousel #hov .navigation {
+  position: absolute;
+  /*border: 2px solid red;*/
+  bottom:5vh;
+  left:1vw;
+}
+
+#front-carousel #hov .paginator{
+  position: absolute;
+  /*border:2px solid red;*/
+  bottom: 22vh;
+  left:63vw;
+  color: white;
+
+}
+
+#front-carousel #hov .paginator a:nth-child(1) div{
+  position: absolute;
+  width:2vw;
+  height: 0.8vh;
+  background-color: white;
+  left: 0vw;
+
+}
+#front-carousel #hov .paginator a:nth-child(1) div:hover{
+  background-color:rgb(206, 224, 2) ;
+}
+#front-carousel #hov .paginator a:nth-child(2) div{
+  position: absolute;
+  width:2vw;
+  height: 0.8vh;
+  background-color: white;
+  left: 3vw;
+}
+#front-carousel #hov .paginator a:nth-child(2) div:hover{
+  background-color: rgb(206, 224, 2) ;
+}
+
+#front-carousel #hov .paginator a:nth-child(3) div{
+  position: absolute;
+  width:2vw;
+  height: 0.8vh;
+  background-color: white;
+  left: 6vw;
+}
+#front-carousel #hov .paginator a:nth-child(3) div:hover{
+  background-color:rgb(206, 224, 2) ;
+}
+
+#front-carousel #hov:hover {
+  opacity: 1;
+  visibility: visible;
+  transition: 3s;
+
+}
+
+
+#front-carousel .navigation a:nth-child(1){
+  position: absolute;
+  /*border: 2px solid red;*/
+  bottom: 33vh;
+  left: 4vw;
+  color: white;
+}
+#front-carousel .navigation a:nth-child(1):hover{
+  color:rgb(206, 224, 2) ;
+}
+
+#front-carousel .navigation a:nth-child(2){
+  position: absolute;
+  /*border: 2px solid red;*/
+  bottom: 33vh;
+  left: 80vw;
+  color: white;
+}
+#front-carousel .navigation a:nth-child(2):hover{
+  color:rgb(206, 224, 2) ;
+}
+
 @keyframes sliding{
-  0%{left:0%;}
-  29%{left:0%;}
-  33%{left:-33.3%;}
-  62%{left: -33.3%}
-  66%{left:-66%.6%}
-  96%{left: -66.6%
-  100%{left:0%}}
+  0% {left:0%;}
+  29% {left:0%;}
+  33% {left:-33.3%;}
+  62% {left:-33.3%;}
+  66% {left:-66.6%;}
+  96% {left:-66.6%;}
+  100% {left:0%;}
 
 }
