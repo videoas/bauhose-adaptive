@@ -1,0 +1,57 @@
+#front-carousel figcaption{
+  width: 30vw;
+  height: 80vh;
+  border: 2px solid red;
+  position: relative;
+}
+#front-carousel figcaption div{
+  position: absolute;
+  background-color: green;
+}
+#front-carousel figcaption div.t{
+
+  height: 3px;
+  width: 100%;
+  top:0;
+  left:0;
+  animation: hor 3s;
+  animation-fill-mode: forwards;
+
+
+}
+#front-carousel figcaption div.r{
+
+  height:0% ;
+  width:3px ;
+  top:0;
+  right: 0px;
+  animation: ver 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+#front-carousel figcaption div.b{
+  height: 3px;
+  width: 0%;
+  bottom: 0;
+  right: 0;
+    animation: hor 3s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+#front-carousel figcaption div.l{
+  height:0% ;
+  width:3px ;
+  bottom:  0px;
+  left: 0px;
+ animation: ver 3s;
+ animation-delay: 9s;
+ animation-fill-mode: forwards;
+}
+@keyframes hor{
+  from{ width:0% }
+  to { width: 100%}
+}
+@keyframes ver{
+  from{ height: 0% }
+  to { height:  100%}
+}
